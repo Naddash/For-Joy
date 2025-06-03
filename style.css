@@ -1,0 +1,69 @@
+@font-face{
+    font-family: 'adelia';
+    src: url(adelia_3/adelia.ttf);
+}
+body {
+    background: #131b21;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.box {
+    min-height: 100px;
+    border: 0px solid #64c0ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131b21;
+
+    font-family: adelia;
+    font-size: 30px;
+    color: #fad7c4;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    animation: pulse 2s infinite ease-in-out;
+}
+
+
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+
+
+#Footer_group_1_,
+[id^=PinkFlowerGroup],
+[id^=BaseGroup] path,
+[id^=LeafGroup] path,
+path[id^=Stroke],
+g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^=Dots],
+[id^=Flourish] {
+  visibility: hidden;
+}
